@@ -34,7 +34,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        textView.setText(Double.toString(1.15*x) + "$");
+                        textView.setText("$" + Double.toString(1.15*x));
                     }
                 }
         );
@@ -43,7 +43,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        textView.setText(Double.toString(1.20*x) + "$");
+                        textView.setText("$" + Double.toString(1.20*x));
                     }
                 }
         );
@@ -52,7 +52,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        textView.setText(Double.toString(1.25*x) + "$");
+                        textView.setText("$" + Double.toString(1.25*x));
                     }
                 }
         );
@@ -61,7 +61,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        textView.setText(Double.toString((1 + 0.01* y) *x) + "$");
+                        textView.setText("$" + Double.toString((1 + 0.01* y) *x));
                     }
                 }
         );
