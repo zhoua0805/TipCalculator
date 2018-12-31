@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView textView = findViewById(R.id.textView3);
         final Double x = Double.parseDouble(message);    //convert the string value to double
         Double t = 1.15 *x;
-        textView.setText(Double.toString(t) + "$");      //print out the final price (original + 15% tip)
+        textView.setText("$" + Double.toString(t));      //print out the final price (original + 15% tip)
     }
 
     /** Called when the user taps the 20% button */
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         String message = editText.getText().toString();    //retrieve value from the user input
         final TextView textView = findViewById(R.id.textView3);
         final Double x = Double.parseDouble(message);    //convert the string value to double
-        textView.setText(Double.toString(1.20*x) + "$");      //print out the final price (original + 20% tip)
+        textView.setText("$" + Double.toString(1.20*x));      //print out the final price (original + 20% tip)
     }
 
     /** Called when the user taps the 25% button */
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         String message = editText.getText().toString();    //retrieve value from the user input
         final TextView textView = findViewById(R.id.textView3);
         final Double x = Double.parseDouble(message);    //convert the string value to double
-        textView.setText(Double.toString(1.25*x) + "$");      //print out the final price (original + 25% tip)
+        textView.setText("$" + Double.toString(1.25*x));      //print out the final price (original + 25% tip)
     }
 
     /** Called when the user taps the enter button */
@@ -61,6 +61,6 @@ public class MainActivity extends AppCompatActivity {
         final TextView textView = findViewById(R.id.textView3);
         final Double x = Double.parseDouble(message);    //convert the string value to double
         final Double y = Double.parseDouble(message2);    //convert the string value to double
-        textView.setText(" " +Double.toString((1 + 0.01* y) *x) + "$");      //print out the final price (original + custom tip)
+        textView.setText(" " + "$" + Double.toString((1 + 0.01* y) *x));      //print out the final price (original + custom tip)
     }
 }
